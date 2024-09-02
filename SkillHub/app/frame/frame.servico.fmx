@@ -1,0 +1,92 @@
+object frameServico: TframeServico
+  OnTap = FrameTap
+  Align = Top
+  Size.Width = 420.000000000000000000
+  Size.Height = 152.000000000000000000
+  Size.PlatformDefault = False
+  OnClick = FrameClick
+  object recImg: TRectangle
+    Align = Client
+    Fill.Bitmap.WrapMode = TileStretch
+    Fill.Kind = Bitmap
+    HitTest = False
+    Size.Width = 420.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    object Rectangle2: TRectangle
+      Align = Bottom
+      Corners = [BottomLeft, BottomRight]
+      Fill.Color = claBlack
+      HitTest = False
+      Position.Y = 102.000000000000000000
+      Size.Width = 420.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 20.000000000000000000
+      YRadius = 20.000000000000000000
+      object lblTexto: TSkLabel
+        Align = Client
+        Margins.Left = 24.000000000000000000
+        Size.Width = 396.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size]
+        TextSettings.Font.Weight = Semibold
+        TextSettings.FontColor = claWhite
+        Words = <
+          item
+            Text = 'Monto Arm'#225'rio por Apenas ...'
+          end>
+      end
+    end
+    object SkSvg1: TSkSvg
+      Position.X = 24.000000000000000000
+      Position.Y = 65.000000000000000000
+      Size.Width = 25.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Svg.Source = 
+        '<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmln' +
+        's="http://www.w3.org/2000/svg">'#13#10'<path d="M15.5803 0.75C7.30905 ' +
+        '0.75 0.580322 7.47908 0.580322 15.75C0.580322 24.0209 7.30905 30' +
+        '.75 15.5803 30.75C23.8516 30.75 30.5803 24.0209 30.5803 15.75C30' +
+        '.5803 7.47908 23.8516 0.75 15.5803 0.75ZM22.6256 14.0801L15.6593' +
+        ' 21.0463C14.8951 21.8106 13.6569 21.8106 12.8926 21.0463L8.86114' +
+        ' 17.0149C8.09685 16.2509 8.09685 15.0122 8.86114 14.2482C9.62544' +
+        ' 13.4839 10.8635 13.4839 11.6278 14.2482L14.276 16.896L19.8589 1' +
+        '1.3133C20.6232 10.549 21.8613 10.549 22.6256 11.3133C23.3899 12.' +
+        '0774 23.3899 13.3161 22.6256 14.0801Z" fill="#25D483" stroke="#2' +
+        '5D483" stroke-width="0.001675"/>'#13#10'</svg>'
+    end
+  end
+  object Rectangle3: TRectangle
+    Fill.Color = xFF9082E0
+    HitTest = False
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 45.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object lblKm: TSkLabel
+      Align = Client
+      Locked = True
+      Size.Width = 45.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Size]
+      TextSettings.Font.Weight = Semibold
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Words = <
+        item
+          Text = '11 Km'
+        end>
+    end
+  end
+end
